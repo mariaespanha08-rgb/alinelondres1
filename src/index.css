@@ -1,0 +1,76 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bege-claro: #F6EFE6;
+    --bege-medio: #EADCCB;
+    --marrom-claro: #A68262;
+    --marrom-escuro: #5B4636;
+    --dourado: #C9A24D;
+    --dourado-claro: #E3C77E;
+    --dourado-escuro: #B8903A;
+    --branco-quente: #FFFBF5;
+  }
+
+  body {
+    background-color: var(--bege-claro);
+    color: var(--marrom-escuro);
+    font-family: 'Montserrat', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, .font-serif {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+  }
+}
+
+.font-garamond {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+}
+
+.font-montserrat {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Luxury gold gradient */
+.bg-gold-gradient {
+  background: linear-gradient(135deg, #C9A24D 0%, #E3C77E 50%, #B8903A 100%);
+}
+
+.border-gold-gradient {
+  border-image: linear-gradient(135deg, #C9A24D, #E3C77E, #B8903A) 1;
+}
+
+.text-gold-gradient {
+  background: linear-gradient(135deg, #C9A24D 0%, #E3C77E 50%, #B8903A 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Arch Shape for Hero Image */
+.rounded-arch {
+  border-top-left-radius: 9999px;
+  border-top-right-radius: 9999px;
+  border-bottom-left-radius: 1.5rem;
+  border-bottom-right-radius: 1.5rem;
+}
+
+/* Smooth transitions */
+button, a {
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Custom scrollbar for legal modals */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #F6EFE6;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #C9A24D;
+  border-radius: 9999px;
+}
+
